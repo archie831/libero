@@ -1,0 +1,1084 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Programming/ruby installer/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_header.scss */
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  /*===========header=============*/
+  /*===========menuBar============*/
+  /*===========logo================*/
+  /*============navbar=================*/
+  /*============searchBar================*/
+}
+/* line 7, ../sass/_header.scss */
+body p {
+  margin: 0;
+  padding: 0;
+}
+/* line 12, ../sass/_header.scss */
+body header {
+  background-color: #0f1f3c;
+  padding: 10px;
+  position: relative;
+}
+/* line 18, ../sass/_header.scss */
+body #menuBar-container {
+  display: inline-block;
+  margin: 40px 40px 40px 40px;
+}
+/* line 22, ../sass/_header.scss */
+body #menuBar {
+  display: inline-block;
+  position: relative;
+}
+/* line 26, ../sass/_header.scss */
+body #menuBar-container:hover #menuBar-dropDown {
+  /* display:inline-block; */
+}
+/* line 31, ../sass/_header.scss */
+body .menuBar-lines {
+  border-bottom: 7px solid white;
+  width: 45px;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+/* line 39, ../sass/_header.scss */
+body #menuBar-dropDown {
+  position: absolute;
+  border: 1.5px solid #0f1f3c;
+  top: 100%;
+  left: 0%;
+  width: auto;
+  height: auto;
+  background-color: #0f1f3c;
+  /*display:none;*/
+}
+/* line 50, ../sass/_header.scss */
+body #menuBar-dropDown ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 54, ../sass/_header.scss */
+body #menuBar-dropDown li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 59, ../sass/_header.scss */
+body .menuBar-link {
+  text-decoration: none;
+  display: block;
+  padding: 10px 80px 10px 80px;
+  font-size: 1.5em;
+}
+/* line 65, ../sass/_header.scss */
+body #menuBar-dropDown .menuBar-link {
+  color: white;
+}
+/* line 68, ../sass/_header.scss */
+body .menuBar-link:hover {
+  color: #0f1f3c;
+  background-color: white;
+}
+/* line 72, ../sass/_header.scss */
+body #menuBar-dropDown a:hover {
+  color: #0f1f3c;
+}
+/* line 76, ../sass/_header.scss */
+body #logo {
+  display: inline-block;
+  vertical-align: 25%;
+}
+/* line 80, ../sass/_header.scss */
+body #logo-img {
+  width: 230px;
+}
+/* line 84, ../sass/_header.scss */
+body #navBar {
+  display: inline-block;
+  margin-left: 2%;
+  vertical-align: 70%;
+}
+/* line 89, ../sass/_header.scss */
+body #navBar ul {
+  display: inline-block;
+  position: relative;
+}
+/* line 93, ../sass/_header.scss */
+body #navBar li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+/* line 98, ../sass/_header.scss */
+body #navBar .navBar-link {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+/* line 103, ../sass/_header.scss */
+body #navBar a:link, body :visited {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  position: relative;
+  z-index: 1;
+}
+/* line 113, ../sass/_header.scss */
+body #navBar a:hover {
+  background-color: white;
+  color: #0f1f3c;
+}
+/* line 118, ../sass/_header.scss */
+body #searchBar {
+  float: right;
+  font-size: 40px;
+  color: aliceblue;
+  background-color: #0f1f3c;
+  margin-top: 42px;
+  margin-right: 30px;
+}
+/* line 127, ../sass/_header.scss */
+body #searchInput {
+  width: 300px;
+  z-index: 20;
+  display: none;
+  /*position: absolute;*/
+  /*overflow: visible;*/
+  /*position: absolute;
+  left: 71%;*/
+}
+/* line 136, ../sass/_header.scss */
+body .searchDisplay {
+  display: inline-block;
+}
+/* line 139, ../sass/_header.scss */
+body .searchHide {
+  display: none;
+}
+
+/* line 1, ../sass/_sectionLeft.scss */
+body {
+  /*
+  .secLeft-inputs.error {
+    border: 2px solid red;
+  }
+*/
+  /*radio button====================*/
+}
+/* line 3, ../sass/_sectionLeft.scss */
+body #section-left {
+  padding: 10px;
+  float: left;
+  width: 55%;
+  border-right: 1.5px solid gray;
+  font-size: 1.5em;
+  margin-left: 11%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+/* line 13, ../sass/_sectionLeft.scss */
+body h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+}
+/* line 18, ../sass/_sectionLeft.scss */
+body #article-secLeft {
+  margin-left: 23px;
+}
+/* line 21, ../sass/_sectionLeft.scss */
+body .secLeft-inputs {
+  border: 2px solid #4b73ff;
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+  width: 35%;
+  color: #4b73ff;
+  margin-top: 5px;
+}
+/* line 29, ../sass/_sectionLeft.scss */
+body .secLeft-inputs:focus {
+  outline: none;
+  color: #4b73ff;
+}
+/* line 33, ../sass/_sectionLeft.scss */
+body .secLeft-inputs:-webkit-autofill {
+  color: #4b73ff;
+}
+/* line 36, ../sass/_sectionLeft.scss */
+body #secLeft-para {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* line 43, ../sass/_sectionLeft.scss */
+body #firstName-input, body #lastName-input, body #email-input, body #mobile-input {
+  font-size: 1em;
+}
+/* line 47, ../sass/_sectionLeft.scss */
+body #postcode-input {
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+  width: 150px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+/* line 54, ../sass/_sectionLeft.scss */
+body #postcode-input:focus {
+  outline: none;
+  color: #4b73ff;
+}
+/* line 58, ../sass/_sectionLeft.scss */
+body .secLeft-submit {
+  border: 1.5px solid #0f1f3c;
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  background-color: #0f1f3c;
+  color: white;
+  float: right;
+  margin-right: 12%;
+  margin-top: 60px;
+}
+/* line 70, ../sass/_sectionLeft.scss */
+body .secLeft-submit:hover {
+  background-color: #113b5e;
+  border: 1.5px solid #113b5e;
+  cursor: pointer;
+}
+/* line 76, ../sass/_sectionLeft.scss */
+body .secLeft-submit:focus {
+  outline: none;
+}
+/* line 79, ../sass/_sectionLeft.scss */
+body .error {
+  display: block;
+  color: red;
+  font-size: .7em;
+  padding-left: 15px;
+}
+/* line 90, ../sass/_sectionLeft.scss */
+body #yesorno-error {
+  width: 275px;
+  margin-left: -15px;
+  margin-top: 24px;
+}
+/* line 95, ../sass/_sectionLeft.scss */
+body .secLeft-divInputs {
+  margin-top: 25px;
+}
+/* line 100, ../sass/_sectionLeft.scss */
+body #div-radioButton {
+  display: inline-block;
+}
+/* line 104, ../sass/_sectionLeft.scss */
+body .radioButton-container {
+  border: 1.5px solid #4b73ff;
+  border-radius: 20px;
+  width: 75px;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  position: relative;
+  color: #4b73ff;
+}
+/* line 115, ../sass/_sectionLeft.scss */
+body .radioButton-container:hover {
+  border: 1.5px solid #4b73ff;
+  background-color: #4b73ff;
+  color: white;
+  cursor: pointer;
+}
+/* line 121, ../sass/_sectionLeft.scss */
+body .radioButton-container:hover .radioButton-innerContainer1 {
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+/* line 125, ../sass/_sectionLeft.scss */
+body .radioButton-container:hover .radioButton-innerContainer2 {
+  background-color: white;
+  cursor: pointer;
+}
+/* line 130, ../sass/_sectionLeft.scss */
+body .radioButton-innerContainer1 {
+  border: 1.5px solid #4b73ff;
+  border-radius: 20px;
+  width: 11px;
+  height: 11px;
+  padding: 5px;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+/* line 142, ../sass/_sectionLeft.scss */
+body .radioButton-innerContainer2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #4b73ff;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  position: absolute;
+  top: 22%;
+  left: 21%;
+}
+/* line 154, ../sass/_sectionLeft.scss */
+body .radioButton {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  visibility: hidden;
+}
+/* line 162, ../sass/_sectionLeft.scss */
+body .radioButton-label {
+  font-size: 1em;
+  display: inline-block;
+  margin-left: 35px;
+}
+/* line 167, ../sass/_sectionLeft.scss */
+body .radioButton-label:hover {
+  cursor: pointer;
+}
+/* line 170, ../sass/_sectionLeft.scss */
+body .value {
+  color: #4b73ff;
+  display: inline;
+}
+/* line 174, ../sass/_sectionLeft.scss */
+body #thankyou {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+/* line 178, ../sass/_sectionLeft.scss */
+body .serverErrors {
+  color: red;
+  font-size: .7em;
+  padding-left: 15px;
+}
+/* line 183, ../sass/_sectionLeft.scss */
+body #localStor {
+  font-size: 30px;
+  margin-bottom: 250px;
+  margin-top: 193px;
+}
+/* line 190, ../sass/_sectionLeft.scss */
+body .user-info {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+/* line 3, ../sass/_sectionRight.scss */
+body #section-right {
+  padding: 10px;
+  float: left;
+  width: 20%;
+  margin-top: 4%;
+  margin-left: 1%;
+}
+/* line 10, ../sass/_sectionRight.scss */
+body #secRight-header {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+/* line 16, ../sass/_sectionRight.scss */
+body .divSecRight-img {
+  width: 100%;
+  height: auto;
+  border-top: 10px solid #4b73ff;
+  padding-top: 15px;
+}
+/* line 22, ../sass/_sectionRight.scss */
+body .secRight-imgContainer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: black;
+}
+/* line 29, ../sass/_sectionRight.scss */
+body .secRight-imgContainer:hover #secRight-img1 {
+  opacity: .5;
+}
+/* line 32, ../sass/_sectionRight.scss */
+body .secRight-imgContainer:hover #secRight-img2 {
+  opacity: .5;
+}
+/* line 35, ../sass/_sectionRight.scss */
+body .secRight-imgContainer:hover #overlay1-top {
+  opacity: 1;
+}
+/* line 38, ../sass/_sectionRight.scss */
+body .secRight-imgContainer:hover #overlay1-bottom {
+  opacity: 1;
+}
+/* line 41, ../sass/_sectionRight.scss */
+body .secRight-imgContainer:hover #overlay2-top {
+  opacity: 1;
+}
+/* line 44, ../sass/_sectionRight.scss */
+body .secRight-imgContainer:hover #overlay2-bottom {
+  opacity: 1;
+}
+/* line 51, ../sass/_sectionRight.scss */
+body #secRight-img1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition: opacity .5s ease-in-out;
+}
+/* line 57, ../sass/_sectionRight.scss */
+body #overlay1-top {
+  position: absolute;
+  bottom: 45%;
+  left: 10%;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+/* line 64, ../sass/_sectionRight.scss */
+body #overlay1-bottom {
+  position: absolute;
+  bottom: 1%;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+/* line 73, ../sass/_sectionRight.scss */
+body #secRight-img2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition: opacity .5s ease-in-out;
+}
+/* line 79, ../sass/_sectionRight.scss */
+body #overlay2-top {
+  position: absolute;
+  bottom: 45%;
+  left: 10%;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+/* line 86, ../sass/_sectionRight.scss */
+body #overlay2-bottom {
+  position: absolute;
+  bottom: 1%;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+/* line 93, ../sass/_sectionRight.scss */
+body .overlay-text1 {
+  font-size: 1.5em;
+  text-decoration: none;
+}
+/* line 97, ../sass/_sectionRight.scss */
+body .overlay-text2 {
+  font-size: .8em;
+  text-decoration: none;
+}
+/* line 101, ../sass/_sectionRight.scss */
+body .overlay-para1 {
+  color: white;
+}
+/* line 104, ../sass/_sectionRight.scss */
+body .overlay-para2 {
+  color: white;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(65, 105, 225, 0.5);
+}
+/* line 112, ../sass/_sectionRight.scss */
+body .secRight-para {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* line 2, ../sass/_footer.scss */
+body footer {
+  clear: both;
+  border-top: 1.5px solid black;
+  font-size: 1.1em;
+}
+/* line 7, ../sass/_footer.scss */
+body #footer-container {
+  margin-left: 10%;
+}
+/* line 10, ../sass/_footer.scss */
+body .div-footer {
+  float: left;
+  padding: 10px;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+/* line 17, ../sass/_footer.scss */
+body .div-footer li {
+  list-style: none;
+}
+/* line 20, ../sass/_footer.scss */
+body .footer-header {
+  border-bottom: 1.5px solid #4b73ff;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  margin-right: 35px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 30, ../sass/_footer.scss */
+body .footer-header:hover {
+  color: #4b73ff;
+}
+/* line 33, ../sass/_footer.scss */
+body .div-footer .footer-links {
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 37, ../sass/_footer.scss */
+body .footer-links :link, body :visited {
+  color: black;
+}
+/* line 41, ../sass/_footer.scss */
+body .footer-links:hover {
+  color: #4b73ff;
+}
+/* line 44, ../sass/_footer.scss */
+body #div-rightFooter {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 35px;
+  line-height: 20px;
+}
+/* line 51, ../sass/_footer.scss */
+body .footer-btn {
+  background-color: #4b73ff;
+  height: 26px;
+  width: 27px;
+  border-radius: 100%;
+  margin-bottom: -20%;
+}
+/* line 60, ../sass/_footer.scss */
+body #div-rightFooter .footer-links {
+  padding-left: 34%;
+}
+/* line 64, ../sass/_footer.scss */
+body #div-rightFooter a {
+  vertical-align: 12px;
+  text-decoration: none;
+}
+/* line 69, ../sass/_footer.scss */
+body .div-div-footer {
+  width: 110px;
+}
+
+/* line 1, ../sass/_mediaQueries.scss */
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+@media screen and (max-width: 1400px) {
+  /* line 9, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    float: right;
+    margin-top: -82px;
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  /* line 17, ../sass/_mediaQueries.scss */
+  body #section-left {
+    width: 60%;
+  }
+  /* line 21, ../sass/_mediaQueries.scss */
+  body #section-right {
+    width: 20%;
+  }
+  /* line 25, ../sass/_mediaQueries.scss */
+  body footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* line 31, ../sass/_mediaQueries.scss */
+  body .overlay-text1, body .overlay-text2 {
+    font-size: 1.2em;
+  }
+  /* line 35, ../sass/_mediaQueries.scss */
+  body .overlay-para2 {
+    font-size: .9em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* line 41, ../sass/_mediaQueries.scss */
+  body #searchBar {
+    margin-top: 43px;
+  }
+}
+@media screen and (max-width: 1097px) {
+  /* line 47, ../sass/_mediaQueries.scss */
+  body #div-rightFooter {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 1097px) and (max-width: 1000px) {
+  /* line 52, ../sass/_mediaQueries.scss */
+  body .overlay-text1, body .overlay-text2 {
+    font-size: .8em;
+  }
+  /* line 56, ../sass/_mediaQueries.scss */
+  body .overlay-para2 {
+    font-size: .6em;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  /* line 64, ../sass/_mediaQueries.scss */
+  body #navBar {
+    display: block;
+    margin: 0;
+  }
+  /* line 69, ../sass/_mediaQueries.scss */
+  body #navBar ul {
+    display: inline-block;
+    margin-bottom: 90px;
+    margin-top: 0px;
+    padding-left: 26px;
+  }
+  /* line 75, ../sass/_mediaQueries.scss */
+  body #searchBar {
+    float: left;
+    margin-top: -55px;
+    margin-left: 43px;
+  }
+  /* line 80, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    float: left;
+    margin-left: 92px;
+    margin-top: -48px;
+  }
+}
+@media screen and (max-width: 870px) {
+  /* line 89, ../sass/_mediaQueries.scss */
+  body #div-footer1 {
+    width: 20%;
+  }
+  /* line 92, ../sass/_mediaQueries.scss */
+  body #div-footer2 {
+    width: 20%;
+  }
+  /* line 95, ../sass/_mediaQueries.scss */
+  body #div-footer3 {
+    width: 20%;
+  }
+  /* line 98, ../sass/_mediaQueries.scss */
+  body #div-footer4 {
+    width: 20%;
+  }
+  /* line 102, ../sass/_mediaQueries.scss */
+  body #div-rightFooter {
+    width: 20%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 110, ../sass/_mediaQueries.scss */
+  body #menuBar-container {
+    margin: 40px 40px 40px 40px;
+  }
+  /* line 113, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    right: 380px;
+    top: 194px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 120, ../sass/_mediaQueries.scss */
+  body #section-left {
+    width: 92%;
+    margin: 2%;
+    padding: 2%;
+    border-bottom: 1px black solid;
+    border-right: none;
+  }
+  /* line 128, ../sass/_mediaQueries.scss */
+  body #section-right {
+    width: 80%;
+    margin: 5%;
+    padding: 5%;
+    border: 0;
+  }
+  /* line 134, ../sass/_mediaQueries.scss */
+  body .secLeft-inputs {
+    width: 200px;
+  }
+  /* line 138, ../sass/_mediaQueries.scss */
+  body .overlay-text1, body .overlay-text2 {
+    font-size: 2.5em;
+  }
+  /* line 142, ../sass/_mediaQueries.scss */
+  body .overlay-para2 {
+    font-size: .5em;
+  }
+  /* line 145, ../sass/_mediaQueries.scss */
+  body #secLeft-submit {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 152, ../sass/_mediaQueries.scss */
+  body #div-footer1 {
+    width: 30%;
+  }
+  /* line 155, ../sass/_mediaQueries.scss */
+  body #div-footer2 {
+    width: 30%;
+  }
+  /* line 158, ../sass/_mediaQueries.scss */
+  body #div-footer3 {
+    width: 30%;
+  }
+  /* line 161, ../sass/_mediaQueries.scss */
+  body #div-footer4 {
+    width: 30%;
+  }
+  /* line 165, ../sass/_mediaQueries.scss */
+  body #div-rightFooter {
+    margin-left: 27%;
+  }
+}
+@media screen and (max-width: 560px) {
+  /* line 171, ../sass/_mediaQueries.scss */
+  body #navBar ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 176, ../sass/_mediaQueries.scss */
+  body #navBar li {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 181, ../sass/_mediaQueries.scss */
+  body #navBar a {
+    display: block;
+    text-align: center;
+  }
+  /* line 186, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    top: 134px;
+  }
+  /* line 189, ../sass/_mediaQueries.scss */
+  body .overlay-text1, body .overlay-text2 {
+    font-size: 1.5em;
+  }
+  /* line 193, ../sass/_mediaQueries.scss */
+  body .overlay-para2 {
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 560px) {
+  /* line 199, ../sass/_mediaQueries.scss */
+  body #navBar ul {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 206, ../sass/_mediaQueries.scss */
+  body body {
+    font-size: 12px;
+  }
+  /* line 209, ../sass/_mediaQueries.scss */
+  body #logo-img {
+    width: 190px;
+  }
+  /* line 213, ../sass/_mediaQueries.scss */
+  body #navBar a:link, body :visited {
+    font-size: 1.2em;
+  }
+  /* line 217, ../sass/_mediaQueries.scss */
+  body #section-left {
+    border-bottom: 1px black solid;
+  }
+  /* line 221, ../sass/_mediaQueries.scss */
+  body #searchBar {
+    margin-top: 123px;
+    font-size: 35px;
+  }
+  /* line 226, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    top: 134px;
+  }
+  /* line 230, ../sass/_mediaQueries.scss */
+  body #section-right {
+    /*font-size: .7em;*/
+  }
+  /* line 235, ../sass/_mediaQueries.scss */
+  body #menuBar-dropDown {
+    width: 99%;
+  }
+  /* line 239, ../sass/_mediaQueries.scss */
+  body #secLeft-submit {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  /* line 244, ../sass/_mediaQueries.scss */
+  body .radioButton-innerContainer1 {
+    width: 7px;
+    height: 8px;
+    top: 13%;
+    left: 7%;
+  }
+  /* line 251, ../sass/_mediaQueries.scss */
+  body .radioButton-innerContainer2 {
+    width: 10px;
+    height: 11px;
+  }
+  /* line 256, ../sass/_mediaQueries.scss */
+  body .radioButton-container {
+    width: 55px;
+  }
+  /* line 260, ../sass/_mediaQueries.scss */
+  body .radioButton-label {
+    margin-left: 25px;
+  }
+  /* line 263, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    width: 55%;
+  }
+  /* line 266, ../sass/_mediaQueries.scss */
+  body #searchBar {
+    margin-top: -50px;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 455px) {
+  /* line 273, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    width: 55%;
+  }
+  /* line 276, ../sass/_mediaQueries.scss */
+  body #searchBar {
+    margin-top: -50px;
+    font-size: 35px;
+  }
+  /* line 281, ../sass/_mediaQueries.scss */
+  body #logo {
+    left: 20%;
+  }
+  /* line 286, ../sass/_mediaQueries.scss */
+  body .footer-btn {
+    height: 19px;
+    width: 19px;
+  }
+  /* line 291, ../sass/_mediaQueries.scss */
+  body .div-div-footer {
+    width: 80px;
+  }
+  /* line 295, ../sass/_mediaQueries.scss */
+  body .div-rightFooter ul {
+    padding-left: 0px;
+  }
+  /* line 300, ../sass/_mediaQueries.scss */
+  body #ul-rightFooter {
+    padding-left: 0px;
+  }
+  /* line 304, ../sass/_mediaQueries.scss */
+  body #div-footer1 ul {
+    padding-left: 0px;
+  }
+  /* line 308, ../sass/_mediaQueries.scss */
+  body #div-footer2 ul {
+    padding-left: 20px;
+  }
+  /* line 312, ../sass/_mediaQueries.scss */
+  body #div-footer3 ul {
+    padding-left: 0px;
+  }
+  /* line 316, ../sass/_mediaQueries.scss */
+  body #div-footer4 ul {
+    padding-left: 20px;
+  }
+  /* line 319, ../sass/_mediaQueries.scss */
+  body #secLeft-submit {
+    margin-right: 36px;
+  }
+  /* line 322, ../sass/_mediaQueries.scss */
+  body .secLeft-inputs {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* line 328, ../sass/_mediaQueries.scss */
+  body header {
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* line 335, ../sass/_mediaQueries.scss */
+  body #menuBar-container {
+    margin-left: 0px;
+    margin-bottom: 25px;
+  }
+  /* line 339, ../sass/_mediaQueries.scss */
+  body .menuBar-lines {
+    width: 28px;
+    border-bottom: 4px solid white;
+    margin-bottom: 0px;
+    padding: 3px;
+  }
+  /* line 345, ../sass/_mediaQueries.scss */
+  body #logo-img {
+    width: 165px;
+    vertical-align: 3px;
+  }
+  /* line 349, ../sass/_mediaQueries.scss */
+  body #menuBar {
+    top: -9px;
+    right: -18px;
+  }
+  /* line 353, ../sass/_mediaQueries.scss */
+  body #searchBar {
+    margin-left: 19px;
+    font-size: 25px;
+    margin-top: -45px;
+  }
+  /* line 358, ../sass/_mediaQueries.scss */
+  body #searchInput {
+    margin-left: 57px;
+  }
+  /* line 361, ../sass/_mediaQueries.scss */
+  body #section-left-header {
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 425px) and (max-width: 370px) {
+  /* line 365, ../sass/_mediaQueries.scss */
+  body #div-footer1 {
+    margin: 0;
+    display: block;
+  }
+  /* line 369, ../sass/_mediaQueries.scss */
+  body #div-footer2 {
+    margin: 0;
+  }
+  /* line 372, ../sass/_mediaQueries.scss */
+  body #div-footer3 {
+    margin: 0;
+  }
+  /* line 375, ../sass/_mediaQueries.scss */
+  body #div-footer4 {
+    margin: 0;
+  }
+  /* line 378, ../sass/_mediaQueries.scss */
+  body #div-footer2 ul, body #div-footer4 ul, body #div-footer3 ul, body #div-footer1 ul {
+    padding: 0;
+  }
+  /* line 382, ../sass/_mediaQueries.scss */
+  body #div-rightFooter {
+    margin-left: 0px;
+    padding-left: 10px;
+  }
+  /* line 386, ../sass/_mediaQueries.scss */
+  body .div-footer {
+    float: none;
+  }
+  /* line 390, ../sass/_mediaQueries.scss */
+  body .overlay-text1, body .overlay-text2 {
+    font-size: 1.2em;
+  }
+  /* line 394, ../sass/_mediaQueries.scss */
+  body .overlay-para2 {
+    font-size: .7em;
+  }
+}
+@media screen and (max-width: 425px) and (max-width: 300px) {
+  /* line 400, ../sass/_mediaQueries.scss */
+  body #menuBar {
+    display: none;
+  }
+  /* line 404, ../sass/_mediaQueries.scss */
+  body #menuBar-container {
+    margin-left: -15px;
+  }
+}

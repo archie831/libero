@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/resources/assets2/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/resources/assets2/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/resources/assets2/stylesheets/screen.css">
+    <title>Libero.com</title>
+</head>
+<body>
+<header>
+    <div id="menuBar-container">
+        <div id="menuBar">
+            <div class="menuBar-lines"></div>
+            <div class="menuBar-lines"></div>
+            <div class="menuBar-lines"></div>
+        </div>
+    </div>
+
+    <div id="logo">
+        <img src="/resources/images/libero.png" id="logo-img">
+    </div>
+
+    <div id="navBar">
+        <ul>
+            <li><a class="navBar-link" href="">HOME</a></li>
+            <li><a class="navBar-link" href="">NEWS</a></li>
+            <li><a class="navBar-link" href="">EVENTS</a></li>
+            <li><a class="navBar-link" href="">WORLD</a></li>
+        </ul>
+    </div>
+
+    <span id="searchBar" class="fa fa-search"></span>
+    <div id="div-searchBar">
+        <form id="form-searchBar">
+            <input type="search" id="searchInput" class="secLeft-inputs" placeholder="Search...">
+        </form>
+    </div>
+</header>
+
+<section id="section-left">
+    <div id="formContainer">
+        <h1 id="section-left-header">How do you feel about recycling?</h1>
+        <article id="article-secLeft">
+
+            <form id="theForm" autocomplete="off" th:action="@{/save}">
+                <!--<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">--->
+                <label for="postcode-input">
+                    <div>Postcode:</div>
+                <input type="text" id="postcode-input" class="secLeft-inputs" name="postcode">
+                </label>
+
+                <p id="secLeft-para">Should the government start enforcing garbage<br> separation and recycling schemes across your area? </p>
+
+                <div id="div-radioButton">
+
+                    <label for="radioYes">
+                        <div class="radioButton-container" id="radioButton-Yes">
+                            <div class="radioButton-innerContainer1" id="radio-cont1-Yes">
+                                <div class="radioButton-innerContainer2" id="radio-cont2-Yes">
+                                    <input class="radioButton" type="radio" id="radioYes" name="yesorno" value="Yes">
+                                </div>
+                            </div>
+
+                            <label class="radioButton-label" for="radioYes">Yes</label>
+                        </div>
+                    </label>
+
+
+                    <label for="radioNo">
+                        <div class="radioButton-container" id="radioButton-No">
+                            <div class="radioButton-innerContainer1" id="radio-cont1-No">
+                                <div class="radioButton-innerContainer2" id="radio-cont2-No">
+                                    <input class="radioButton" type="radio" id="radioNo" name="yesorno" value="No">
+                                </div>
+                            </div>
+                            <label class="radioButton-label" for="radioNo">No</label>
+                        </div>
+                    </label>
+                </div>
+
+                <label for="firstName-input">
+                    <div class="secLeft-divInputs">First Name:</div>
+                    <input class="secLeft-inputs" type="text" id="firstName-input" name="firstname" >
+                </label>
+
+                <label for="lastName-input">
+                    <div class="secLeft-divInputs">Last Name:</div>
+                <input class="secLeft-inputs" type="text" id="lastName-input" name="lastname" >
+                </label>
+
+                <label for="email-input">
+                    <div class="secLeft-divInputs">E-mail Address:</div>
+                <input class="secLeft-inputs" type="email" id="email-input" name="email" >
+                </label>
+
+                <label for="mobile-input">
+                    <div class="secLeft-divInputs">Mobile Number:</div>
+                <input class="secLeft-inputs" type="text" id="mobile-input"  name="mobilenumber" >
+                </label>
+
+                <input type="submit" value="Submit"  class="secLeft-submit" >
+            </form>
+        </article>
+    </div>
+</section>
+
+<section id="section-right">
+    <p id="secRight-header">Phasellus augue sapien</p>
+
+    <div class="divSecRight-img">
+        <div class="secRight-imgContainer">
+            <a href="">
+                <img id="secRight-img1" src="/resources/images/1b.jpeg">
+            </a>
+            <div id="overlay1-top">
+                <a href="" class="overlay-text1">
+                    <p class="overlay-para1">Vestibulum sit amet<br> tempor orci</p>
+                </a>
+            </div>
+
+            <div id="overlay1-bottom">
+                <a href="" class="overlay-text2">
+                    <p class="overlay-para2">Read more >>
+                    </p>
+                </a>
+            </div>
+        </div>
+        <p class="secRight-para">Phasellus augue sapien,<br> aliquam sit amet mauris </p>
+    </div>
+
+    <div  class="divSecRight-img">
+        <div class="secRight-imgContainer">
+            <a href="">
+                <img id="secRight-img2" src="/resources/images/1c.jpeg">
+            </a>
+            <div id="overlay2-top">
+                <a href="" class="overlay-text1">
+                    <p class="overlay-para1">Integer consectetur<br> orci ligula</p>
+                </a>
+            </div>
+
+            <div id="overlay2-bottom">
+                <a href="" class="overlay-text2">
+                    <p class="overlay-para2">Read more >></p>
+                </a>
+            </div>
+        </div>
+        <p class="secRight-para">Sed facilisis volutpat<br> turpis eu viverra</p>
+    </div>
+</section>
+
+<footer>
+    <div id="footer-container">
+        <div class="div-footer" id="div-footer1">
+            <ul>
+                <li><a class="footer-header" href="">Rutrum</a></li>
+                <li><a class="footer-links" href="">Fermentum</a></li>
+                <li><a class="footer-links" href="">Neque</a></li>
+                <li><a class="footer-links" href="">Consequat</a></li>
+            </ul>
+        </div>
+
+        <div class="div-footer" id="div-footer2">
+            <ul>
+                <li><a class="footer-header" href="">Malesuada</a></li>
+                <li><a class="footer-links" href="">Tellus</a></li>
+                <li><a class="footer-links" href="">Condimentum</a></li>
+                <li><a class="footer-links" href="">Consectetur</a></li>
+            </ul>
+        </div>
+
+        <div class="div-footer" id="div-footer3">
+            <ul>
+                <li><a class="footer-header" href="">Pellentesque</a></li>
+                <li><a class="footer-links" href="">Habitant</a></li>
+                <li><a class="footer-links" href="">Morbi</a></li>
+                <li><a class="footer-links" href="">Tristique</a></li>
+            </ul>
+        </div>
+
+        <div class="div-footer" id="div-footer4">
+            <ul>
+                <li><a class="footer-header" href="">Quisque</a></li>
+                <li><a class="footer-links" href="">Pharetra</a></li>
+                <li><a class="footer-links" href="">Volutpat</a></li>
+                <li><a class="footer-links" href="">Tristique</a></li>
+            </ul>
+        </div>
+
+        <div id="div-rightFooter">
+            <ul id="ul-rightFooter">
+                <div class="div-div-footer">
+                    <div class="footer-btn"></div>
+                    <a class="footer-links" href="">Phasellus</a>
+                </div>
+                <div class="div-div-footer">
+                    <div class="footer-btn"></div>
+                    <a class="footer-links" href="">Augue</a>
+                </div>
+                <div class="div-div-footer">
+                    <div class="footer-btn"></div>
+                    <a class="footer-links" href="">Sapien</a>
+                </div>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="/resources/assets2/js/jquery.js"></script>
+
+<!--<script src="/resources/assets2/js/jquery.validate.min.js"></script>-->
+
+<!--<script src="/resources/assets2/js/validate-plugin.js"></script>-->
+
+<script src="/resources/assets2/js/index.js"></script>
+
+<script src="/resources/assets2/js/valajax.js"></script>
+
+</body>
+</html>

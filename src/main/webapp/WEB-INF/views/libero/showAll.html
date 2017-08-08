@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+</head>
+<body>
+<table class="table table-bordered">
+    <th>
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+            <td>USERNAME</td>
+            <td>PASSWORD</td>
+            <td>ACTIONS</td>
+        </tr>
+    </th>
+    <tbody id="tbody">
+        <tr th:each="message : ${messages}" class="tbodyData">
+            <td th:text="${message.id}"></td>
+            <td th:text="${message.name}"></td>
+            <td th:text="${message.username}"></td>
+            <td th:text="${message.password}"></td>
+            <td>
+                <a th:href="@{'edit/' + ${message.id}}"><button class="btn-primary" >Edit/View</button></a>
+                <a th:href="@{'delete/' + ${message.id}}"><button class="btn-danger delete-data" id="delete">Delete</button></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="/resources/js/newjquery2.js"></script>
+<script src="/resources/js/liberoDelete.js"></script>
+</body>
+</html>

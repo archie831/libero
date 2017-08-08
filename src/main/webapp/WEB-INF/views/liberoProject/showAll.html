@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="/resources/assets2/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/resources/assets2/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/resources/assets2/stylesheets/screen.css">
+    <link href="../../../resources/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" media="screen" th:href="@{/resources/bootstrap-3.3.7-dist/css/bootstrap.css}"/>
+</head>
+<header>
+    <div id="menuBar-container">
+        <div id="menuBar">
+            <div class="menuBar-lines"></div>
+            <div class="menuBar-lines"></div>
+            <div class="menuBar-lines"></div>
+        </div>
+    </div>
+
+    <div id="logo" style="vertical-align: 21px">
+        <img src="/resources/images/libero.png" id="logo-img">
+    </div>
+
+    <div id="navBar">
+        <ul>
+            <li><a class="navBar-link" href="">HOME</a></li>
+            <li><a class="navBar-link" href="">NEWS</a></li>
+            <li><a class="navBar-link" href="">EVENTS</a></li>
+            <li><a class="navBar-link" href="">WORLD</a></li>
+        </ul>
+    </div>
+
+    <span id="searchBar" class="fa fa-search"></span>
+    <div id="div-searchBar">
+        <form id="form-searchBar">
+            <input type="search" id="searchInput" class="secLeft-inputs" placeholder="Search...">
+        </form>
+    </div>
+</header>
+<br/>
+
+<body>
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <td >Postcode</td>
+            <td>Garbage collection and recycling</td>
+            <td>First name</td>
+            <td>Last name</td>
+            <td>Email</td>
+            <td>Mobile</td>
+            <td th:if="${logged_in}">Actions</td>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <tr th:each="message : ${messages}" class="tbodyData">
+            <td th:text="${message.postcode}"></td>
+            <td th:text="${message.yesorno}"></td>
+            <td th:text="${message.firstname}" class="data-firstname"></td>
+            <td th:text="${message.lastname}" class="data-lastname"></td>
+            <td th:text="${message.email}"></td>
+            <td th:text="${message.mobilenumber}"></td>
+            <td th:if="${logged_in}">
+                <a th:href="@{'edit/' + ${message.id}}"><button class="btn btn-primary" >Edit/View</button></a>
+                <button class="btn btn-danger delete-data-modal" th:if="${currentUser.authorities[0].authority == 'ROLE_ADMIN'}" th:data="${message.id}" data-target="#delete-modal">Delete</button></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<!--Delete Modal -->
+<div id="delete-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header label-danger" style="color:white">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title"><i class="glyphicon glyphicon-trash"></i>Delete</h2>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete <span class="user-info"></span> record?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger delete-data" data-dismiss="modal" >Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/resources/assets2/js/jquery.js"></script>
+<script src="/resources/assets2/js/index.js"></script>
+<script src="/resources/assets2/js/delete.js"></script>
+<script src="/resources/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</body>
+</html>

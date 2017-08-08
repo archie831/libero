@@ -1,0 +1,361 @@
+body {
+
+  margin:0 auto;
+  font-family: sans-serif;
+  font-size:16px;
+  padding:10px;
+
+  @media screen and (max-width: 1400px) {
+    #searchInput {
+      float: right;
+      margin-top: -82px;
+      margin-right: 80px;
+    }
+
+  }
+  @media screen and (max-width: 1320px) {
+    #section-left {
+      width: 60%;
+    }
+
+    #section-right {
+      width: 20%;
+    }
+
+    footer {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .overlay-text1, .overlay-text2 {
+      font-size: 1.2em;
+    }
+
+    .overlay-para2 {
+      font-size: .9em;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    #searchBar {
+      margin-top: 43px;
+    }
+  }
+
+  @media screen and (max-width: 1097px) {
+    #div-rightFooter {
+      margin-left: 35%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .overlay-text1, .overlay-text2 {
+        font-size: .8em;
+      }
+
+      .overlay-para2 {
+        font-size: .6em;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 1030px) {
+    #navBar {
+      display: block;
+      margin: 0;
+    }
+
+    #navBar ul {
+      display: inline-block;
+      margin-bottom: 90px;
+      margin-top: 0px;
+      padding-left: 26px;
+    }
+    #searchBar {
+      float: left;
+      margin-top: -55px;
+      margin-left: 43px;
+    }
+    #searchInput {
+      float: left;
+      margin-left: 92px;
+      margin-top: -48px;
+    }
+  }
+
+  @media screen and (max-width: 875px) {
+    #div-footer1 {
+      width: 20%;
+    }
+    #div-footer2 {
+      width: 20%;
+    }
+    #div-footer3 {
+      width: 20%;
+    }
+    #div-footer4 {
+      width: 20%;
+    }
+    #div-rightFooter {
+      width: 20%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #menuBar-container {
+      margin: 40px 40px 40px 40px;
+    }
+    #searchInput {
+      right: 380px;
+      top: 194px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #section-left {
+      width: 92%;
+      margin: 2%;
+      padding: 2%;
+      border-bottom: 1px black solid;
+      border-right: none;
+    }
+
+    #section-right {
+      width: 80%;
+      margin: 5%;
+      padding: 5%;
+      border: 0;
+    }
+    .secLeft-inputs {
+      width: 200px;
+    }
+
+    .overlay-text1, .overlay-text2 {
+      font-size: 2.5em;
+    }
+
+    .overlay-para2 {
+      font-size: .5em;
+    }
+    #secLeft-submit {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+  }
+  @media screen and (max-width: 640px) {
+    #div-footer1 {
+      width: 30%;
+    }
+    #div-footer2 {
+      width: 30%;
+    }
+    #div-footer3 {
+      width: 30%;
+    }
+    #div-footer4 {
+      width: 30%;
+    }
+
+    #div-rightFooter {
+      margin-left: 27%;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    #navBar ul {
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+    #navBar li {
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+    #navBar a {
+      display: block;
+      text-align: center;
+    }
+
+    #searchInput {
+      top: 134px;
+    }
+    .overlay-text1, .overlay-text2 {
+      font-size: 1.5em;
+    }
+
+    .overlay-para2 {
+      font-size: .8em;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    #navBar ul {
+      margin-bottom: 60px;
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+    #logo-img {
+      width: 190px;
+    }
+
+    #section-left {
+      /* font-size: 1em;*/
+      border-bottom: 1px black solid;
+    }
+
+    #searchBar {
+      margin-top: 123px;
+      font-size: 35px;
+    }
+
+    #searchInput {
+      top: 134px;
+    }
+
+    #section-right {
+
+      /*font-size: .7em;*/
+    }
+
+    footer {
+      /*font-size: 1em;*/
+
+    }
+
+    #menuBar-dropDown {
+      width: 99%;
+    }
+
+    #secLeft-submit {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .radioButton-innerContainer1 {
+      width: 7px;
+      height: 8px;
+      top: 13%;
+      left: 7%;
+    }
+
+    .radioButton-innerContainer2 {
+      width: 10px;
+      height: 11px;
+    }
+
+    .radioButton-container {
+      width: 55px;
+    }
+
+    .radioButton-label {
+      margin-left: 25px;
+    }
+    #searchInput {
+      width: 55%;
+    }
+    #searchBar {
+      margin-top: -50px;
+      font-size: 35px;
+    }
+  }
+
+  @media screen and (max-width: 455px) {
+    #searchInput {
+      width: 55%;
+    }
+    #searchBar {
+      margin-top: -50px;
+      font-size: 35px;
+    }
+
+    #logo {
+
+      left: 20%;
+    }
+
+    .footer-btn {
+      height: 19px;
+      width: 19px;
+    }
+
+    .div-div-footer {
+      width: 80px;
+    }
+
+    .div-rightFooter ul {
+      padding-left: 0px;
+
+    }
+
+    #ul-rightFooter {
+      padding-left: 0px;
+    }
+
+    #div-footer1 ul {
+      padding-left: 0px;
+    }
+
+    #div-footer2 ul {
+      padding-left: 20px;
+    }
+
+    #div-footer3 ul {
+      padding-left: 0px;
+    }
+
+    #div-footer4 ul {
+      padding-left: 20px;
+    }
+    #secLeft-submit {
+      margin-right: 36px;
+    }
+    .secLeft-inputs {
+      width: 150px
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    header {
+      padding: 10px;
+      margin: 0;
+    }
+
+  }
+  @media screen and (max-width: 425px) {
+    #menuBar-container {
+      margin-left: 0px;
+      margin-bottom: 25px;
+    }
+    .menuBar-lines {
+      width: 25px;
+      border-bottom: 3px solid white;
+      margin-bottom: 0px;
+    }
+    #logo-img {
+      width: 130px;
+    }
+    #menuBar {
+      top: -9px;
+      right: -18px;
+    }
+    #searchBar {
+      margin-left: 19px;
+      font-size: 25px;
+      margin-top: -45px;
+    }
+    #searchInput {
+      margin-left: 57px;
+    }
+    #section-left-header {
+      padding-left: 25px;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+body{
+  margin:0 auto;
+  font-family: sans-serif;
+  font-size:16px;
+  padding:10px;
+
+  p{
+    margin:0;
+    padding:0;
+  }
+  /*===========header=============*/
+  header{
+    background-color: rgb(15, 31, 60);
+    padding:10px;
+    position:relative;
+  }
+  /*===========menuBar============*/
+  #menuBar-container {
+    display: inline-block;
+    margin: 40px 40px 40px 40px;
+  }
+  #menuBar{
+    display:inline-block;
+    position:relative;
+  }
+  #menuBar-container:hover  #menuBar-dropDown{
+    /* display:inline-block; */
+  }
+
+
+  .menuBar-lines {
+    border-bottom: 7px solid white;
+    width: 45px;
+    margin-bottom: 5px;
+    padding: 2px;
+
+
+  }
+  #menuBar-dropDown{
+    position: absolute;
+    border: 1.5px solid rgb(15, 31, 60);
+    top: 100%;
+    left:0%;
+    width:auto;
+    height: auto;
+    background-color: rgb(15, 31, 60);
+    /*display:none;*/
+
+  }
+  #menuBar-dropDown ul{
+    margin:0;
+    padding:0;
+  }
+  #menuBar-dropDown li{
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  .menuBar-link{
+    text-decoration: none;
+    display:block;
+    padding: 10px 80px 10px 80px;
+    font-size: 1.5em;
+  }
+  #menuBar-dropDown .menuBar-link{
+    color:white;
+  }
+  .menuBar-link:hover{
+    color:rgb(15, 31, 60);
+    background-color: white;
+  }
+  #menuBar-dropDown a:hover{
+    color:rgb(15, 31, 60);
+  }
+  /*===========logo================*/
+  #logo{
+    display: inline-block;
+    vertical-align: 25%;
+  }
+  #logo-img{
+    width: 230px;
+  }
+  /*============navbar=================*/
+  #navBar{
+    display: inline-block;
+    margin-left: 2%;
+    vertical-align: 70%;
+  }
+  #navBar ul{
+    display:inline-block;
+    position:relative;
+  }
+  #navBar li{
+    list-style: none;
+    display:inline-block;
+    position:relative;
+  }
+  #navBar .navBar-link{
+    color:white;
+    position:relative;
+    z-index: 1;
+  }
+  #navBar a:link, :visited{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    position:relative;
+    z-index: 1;
+  }
+  #navBar a:hover{
+    background-color: white;
+    color:rgb(15, 31, 60);
+  }
+  /*============searchBar================*/
+  #searchBar{
+    float: right;
+    font-size: 40px;
+    color: aliceblue;
+    background-color: rgb(15, 31, 60);
+    margin-top: 42px;
+    margin-right: 30px;
+
+  }
+  #searchInput{
+    width: 300px;
+    z-index: 20;
+    display:none;
+    /*position: absolute;*/
+    /*overflow: visible;*/
+    /*position: absolute;
+    left: 71%;*/
+  }
+  .searchDisplay{
+    display: inline-block;
+  }
+  .searchHide{
+    display:none;
+  }
+}

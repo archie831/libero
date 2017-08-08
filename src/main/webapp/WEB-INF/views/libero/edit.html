@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+</head>
+<body>
+
+    <form id="edit" th:action="@{'~/update/' + ${user.id}}" method="post">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+        Name:<br/> <input type="text" th:value="${user.name}" name="name"><br/><br/>
+        Username:<br/> <input type="text" th:value="${user.username}" name="username" /><br/><br/>
+        Password: <br/> <input type="text" th:value="${user.password}" name="password" /><br/><br/>
+        <input type="submit" value="Save" id="submitBtn"/>
+    </form>
+    <div id="thankyouUpdate"></div>
+    <div id="responseUpdate"></div>
+
+    <script src="/resources/js/newjquery2.js"></script>
+    <script src="/resources/js/liberoUpdate.js"></script>
+    <script src="/resources/assets2/js/index.js"></script>
+</body>
+</html>

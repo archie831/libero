@@ -1,0 +1,119 @@
+body{
+
+  #section-right{
+    padding:10px;
+    float:left;
+    width: 20%;
+    margin-top: 4%;
+    margin-left: 1%;
+  }
+  #secRight-header{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .divSecRight-img{
+    width:100%;
+    height:auto;
+    border-top: 10px solid #4b73ff;
+    padding-top: 15px;
+  }
+  .secRight-imgContainer{
+    width:100%;
+    height:auto;
+    position:relative;
+    background-color: black;
+  }
+
+  .secRight-imgContainer:hover #secRight-img1{
+    opacity:.5;
+  }
+  .secRight-imgContainer:hover #secRight-img2{
+    opacity:.5;
+  }
+  .secRight-imgContainer:hover #overlay1-top{
+    opacity: 1;
+  }
+  .secRight-imgContainer:hover #overlay1-bottom {
+    opacity: 1;
+  }
+  .secRight-imgContainer:hover #overlay2-top{
+    opacity: 1;
+  }
+  .secRight-imgContainer:hover #overlay2-bottom {
+    opacity: 1;
+  }
+
+
+
+
+  #secRight-img1{
+    width:100%;
+    height:auto;
+    position:relative;
+    transition:opacity .5s ease-in-out;
+  }
+  #overlay1-top{
+    position: absolute;
+    bottom: 45%;
+    left: 10%;
+    opacity:0;
+    transition:opacity .5s ease-in-out;
+  }
+  #overlay1-bottom{
+    position: absolute;
+    bottom: 1%;
+    opacity:0;
+    transition:opacity .5s ease-in-out;
+  }
+
+
+
+  #secRight-img2{
+    width:100%;
+    height:auto;
+    position:relative;
+    transition:opacity .5s ease-in-out;
+  }
+  #overlay2-top{
+    position: absolute;
+    bottom: 45%;
+    left: 10%;
+    opacity:0;
+    transition:opacity .5s ease-in-out;
+  }
+  #overlay2-bottom{
+    position:absolute;
+    bottom: 1%;
+    opacity:0;
+    transition:opacity .5s ease-in-out;
+  }
+
+  .overlay-text1{
+    font-size: 1.5em;
+    text-decoration:none;
+  }
+  .overlay-text2 {
+    font-size: .8em;
+    text-decoration: none;
+  }
+  .overlay-para1{
+    color:white;
+  }
+  .overlay-para2{
+    color:white;
+    padding:5px 10px 5px 10px;
+    background-color: rgba(65, 105, 225, 0.5)
+  }
+
+
+
+  .secRight-para{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+
+
+}
