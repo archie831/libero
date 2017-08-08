@@ -2,7 +2,6 @@ package my.groupid.controllers;
 
 import my.groupid.model.Libero;
 import my.groupid.model.LiberoRepository;
-import org.hsqldb.error.Error;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,7 +15,6 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.security.Principal;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,7 +53,6 @@ public class LiberoProjectController {
                                 BindingResult bindingResult,
                                 HttpServletResponse response
                                ) throws IOException {
-
 
         JSONObject success = new JSONObject();
         JSONObject error = new JSONObject();

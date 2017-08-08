@@ -444,6 +444,10 @@ body .user-info {
   text-transform: uppercase;
   font-size: 17px;
 }
+/* line 195, ../sass/_sectionLeft.scss */
+body #formContainer {
+  display: none;
+}
 
 /* line 3, ../sass/_sectionRight.scss */
 body #section-right {
@@ -1081,4 +1085,14 @@ body {
   body #menuBar-container {
     margin-left: -15px;
   }
+}
+
+/* line 1, ../sass/edit.scss */
+#editpc, #edityon, #editfn, #editln, #editEmail, #editmn {
+  width: 20%;
+}
+
+/* line 4, ../sass/edit.scss */
+.modal-content {
+  margin-top: 35%;
 }

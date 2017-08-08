@@ -4,10 +4,14 @@ $(document).ready(function () {
     //========= FORM EVENTS =========//
     //===============================//
 
+    var container = $("#formContainer");
+
+    container.css({"display": "block"});
+
     //=====check if email is available in local storage=====
     if(localStorage.getItem("eMail")) {
 
-        $("#formContainer").hide().after("<h2 id='localStor'>You have already taken the survey.</h2>");
+        $("#formContainer").css({"display": "none"}).after("<h2 id='localStor'>You have already taken the survey.</h2>");
 
         $("h2").after("<a href ='/showAll'><button class='secLeft-submit'>" +
             "Click here to see all respondents" +
@@ -44,7 +48,7 @@ $(document).ready(function () {
     //==== display thank you message and hide form ====
     function registered(data){
 
-        var container = $("#formContainer");
+        //var container = $("#formContainer");
 
         //=== Hide the form ===
         $("#section-left-header").hide();

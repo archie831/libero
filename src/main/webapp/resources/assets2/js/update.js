@@ -4,30 +4,33 @@
 $(document).ready(function () {
 
     //===== store to var the values of input elements before any change =====
-    var postcode = document.theForm.postcode.value;
-    var yesorno = document.theForm.yesorno.value;
-    var firstname = document.theForm.firstname.value;
-    var lastname = document.theForm.lastname.value;
-    var email = document.theForm.email.value;
-    var mobilenumber = document.theForm.mobilenumber.value;
+    var postcode     = $("#editpc").val();
+    var yesorno      = $("#edityon").val();
+    var firstname    = $("#editfn").val();
+    var lastname     = $("#editln").val();
+    var email        = $("#editemail").val();
+    var mobilenumber = $("#editmn").val();
 
     //======== save button =======
     $("#edit").submit(function(event){
         event.preventDefault();
 
         //======= store to var the values of input elements after the change =====
-        var postcodeInput = document.theForm.postcode.value;
-        var yesornoInput = document.theForm.yesorno.value;
-        var firstnameInput = document.theForm.firstname.value;
-        var lastnameInput = document.theForm.lastname.value;
-        var emailInput = document.theForm.email.value;
-        var mobilenumberInput = document.theForm.mobilenumber.value;
+        var postcodeInput     = $("#editpc").val();
+        var yesornoInput      = $("#edityon").val();
+        var firstnameInput    = $("#editfn").val();
+        var lastnameInput     = $("#editln").val();
+        var emailInput        = $("#editemail").val();
+        var mobilenumberInput = $("#editmn").val();
 
         //======= check if there are changes made
         if(postcode !== postcodeInput || yesorno !== yesornoInput || firstname !==firstnameInput || lastname !==lastnameInput || email !== emailInput || mobilenumber !== mobilenumberInput ){
         //======= Show edit modal =========
             $("#edit-modal").modal('show');
         }
+        //======== front end validation ============================
+        //======== prevents submitting form if errors exist ========
+        if( !$("#theForm").valid() )  return false;
     });
 
 
