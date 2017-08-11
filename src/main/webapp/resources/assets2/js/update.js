@@ -23,14 +23,15 @@ $(document).ready(function () {
         var emailInput        = $("#editemail").val();
         var mobilenumberInput = $("#editmn").val();
 
-        //======= check if there are changes made
-        if(postcode !== postcodeInput || yesorno !== yesornoInput || firstname !==firstnameInput || lastname !==lastnameInput || email !== emailInput || mobilenumber !== mobilenumberInput ){
-        //======= Show edit modal =========
-            $("#edit-modal").modal('show');
-        }
         //======== front end validation ============================
         //======== prevents submitting form if errors exist ========
-        if( !$("#theForm").valid() )  return false;
+        if( !$(this).valid() )  return false;
+
+        //======= check if there are changes made
+        if(postcode !== postcodeInput || yesorno !== yesornoInput || firstname !==firstnameInput || lastname !==lastnameInput || email !== emailInput || mobilenumber !== mobilenumberInput ) {
+            //show edit modal
+            $("#edit-modal").modal('show');
+        }
     });
 
 

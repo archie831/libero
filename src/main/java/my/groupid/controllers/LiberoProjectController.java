@@ -21,11 +21,8 @@ import java.util.List;
  * Created by JPMC-PC15 on 06/07/2017.
  */
 
-
-
 @Controller
 public class LiberoProjectController {
-
 
     private LiberoRepository liberoRepository;
 
@@ -33,7 +30,6 @@ public class LiberoProjectController {
      public LiberoProjectController(LiberoRepository liberoRepository){
          this.liberoRepository = liberoRepository;
      }
-
 
      //============================================================================
      /**NOTES:
@@ -46,7 +42,6 @@ public class LiberoProjectController {
         return "liberoProject/index";
     }
 
-
     //==================== Saving input data from Form ===========================
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public void saveLiberoInput(@ModelAttribute @Valid Libero libero,
@@ -57,7 +52,6 @@ public class LiberoProjectController {
         JSONObject success = new JSONObject();
         JSONObject error = new JSONObject();
         JSONObject obj = new JSONObject();
-
 
         /**NOTES:
          *
@@ -85,11 +79,8 @@ public class LiberoProjectController {
             obj.put("errors", error);
         }
         PrintWriter pw = response.getWriter();
-        //System.out.println("This is the ref var " + pw   );
         response.setContentType("application/json");
         pw.println(obj);
-
-        //System.out.println(obj);
     }
 
     //=============== Accessing Admin/User event (able to Update/Delete data) ================
@@ -99,7 +90,6 @@ public class LiberoProjectController {
      * Update/Show property for User access
      * Show data property for Visitor access
      * */
-
 
     @GetMapping("/currentUser")
     public @ResponseBody Principal currentUser(Principal principal){
@@ -138,7 +128,6 @@ public class LiberoProjectController {
         modelAndView.setViewName("liberoProject/edit");
         return modelAndView ;
     }
-
 
     @RequestMapping (value = "update/{id}", method = RequestMethod.POST)
     public void updateLiberoRecord( Libero libero,

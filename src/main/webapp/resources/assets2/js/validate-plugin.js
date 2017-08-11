@@ -3,7 +3,6 @@
  */
 $(document).ready(function(){
 
-
     $("#theForm").validate({
         rules: {
             postcode: {
@@ -32,8 +31,6 @@ $(document).ready(function(){
                 maxlength: 11
             }
         },
-
-
         messages:{
             postcode: {
                 required: "Enter your post code",
@@ -63,6 +60,7 @@ $(document).ready(function(){
         }
     });
 
+
     $("#edit").validate({
         rules: {
             postcode: {
@@ -91,8 +89,6 @@ $(document).ready(function(){
                 maxlength: 11
             }
         },
-
-
         messages:{
             postcode: {
                 required: "Enter your post code",
