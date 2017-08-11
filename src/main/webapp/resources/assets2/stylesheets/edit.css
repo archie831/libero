@@ -1,0 +1,9 @@
+/* line 1, ../sass/edit.scss */
+#editpc, #edityon, #editfn, #editln, #editEmail, #editmn {
+  width: 20%;
+}
+
+/* line 4, ../sass/edit.scss */
+.modal-content {
+  margin-top: 35%;
+}
